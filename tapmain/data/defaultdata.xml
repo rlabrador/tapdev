@@ -1,0 +1,9 @@
+<record id="first_item" model="tapmain.test">
+    <field name="name">Gaspard</field>
+    <field name="last_name">Labrador</field>
+    <field name="urgent_email">rlabrador2000@gmail.com</field>
+    <field name="emergency_phone1">0672997809</field>
+    <field name="emergency_phone2">0686175496</field>
+    <field name="gender">g</field>
+    <field name="birth_date">2004-10-05</field>
+</record>
