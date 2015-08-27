@@ -1,9 +1,37 @@
-<record id="first_item" model="tapmain.test">
-    <field name="name">Gaspard</field>
-    <field name="last_name">Labrador</field>
-    <field name="urgent_email">rlabrador2000@gmail.com</field>
-    <field name="emergency_phone1">0672997809</field>
-    <field name="emergency_phone2">0686175496</field>
-    <field name="gender">g</field>
-    <field name="birth_date">2004-10-05</field>
-</record>
+<openerp>
+    <data>
+        <record id="item_1" model="tapmain.jours">
+            <field name="jour">1</field>
+        </record>
+                <record id="item_2" model="tapmain.jours">
+            <field name="jour">2</field>
+        </record>
+        <record id="item_3" model="tapmain.jours">
+            <field name="jour">3</field>
+        </record>
+        <record id="item_4" model="tapmain.jours">
+            <field name="jour">4</field>
+        </record>
+        <record id="item_5" model="tapmain.jours">
+            <field name="jour">5</field>
+        </record>
+        <record id="item_6" model="tapmain.jours">
+            <field name="jour">6</field>
+        </record>
+        <record id="item_7" model="tapmain.jours">
+            <field name="jour">7</field>
+        </record>
+        <record id="item_creneau" model="tapmain.creneaux">
+            <field name="cren">A</field>
+        </record>
+        <record id="first_item" model="tapmain.usertest">
+            <field name="name">Gaspard</field>
+            <field name="last_name">Labrador</field>
+            <field name="urgent_email">rlabrador2000@gmail.com</field>
+            <field name="emergency_phone1">0672997809</field>
+            <field name="emergency_phone2">0686175496</field>
+            <field name="gender">g</field>
+            <field name="birth_date">2004-10-05</field>
+        </record>
+    </data>
+</openerp>

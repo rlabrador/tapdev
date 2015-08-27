@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 from openerp import http
 
-# class Tapmain(http.Controller):
-#     @http.route('/tapmain/tapmain/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
+class Tapmain(http.Controller):
+    #appel index comme page de template
+     @http.route('/tapmain/', auth='public')
+     def index(self, **kw):
+        Usertests = http.request.env['tapmain.usertest']
+        return http.request.render('tapmain.index', {
+            'usertests': Usertests.search([])
+        })
 
 #     @http.route('/tapmain/tapmain/objects/', auth='public')
 #     def list(self, **kw):
