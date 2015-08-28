@@ -1,9 +1,18 @@
 <openerp>
     <data>
         <template id="index">
-            <title>Tapmain</title>
-            <t t-foreach="usertests" t-as="usertest">
-              <p><t t-esc="usertest.id"/><t t-esc="usertest.name"/></p>
+            <t t-call="website.layout">
+                <t t-set="title">Liste des intervenants</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <t t-foreach="contractors" t-as="contractor">
+                            <p>
+                                <t t-esc="contractor.id"/>
+                                <t t-esc="contractor.name"/>
+                            </p>
+                        </t>
+                    </div>
+                </div>
             </t>
         </template>
 

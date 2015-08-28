@@ -5,5 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 2.7.9 virtualenv at E:\PERSO_\PycharmProjects\odoo8_dev" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="odoo" />
+    <orderEntry type="module" module-name="openeducat_erp" />
+    <orderEntry type="module" module-name="EduERPv8" />
   </component>
 </module>

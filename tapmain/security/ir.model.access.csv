@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_tapmain_usertest,access_tapmain_usertest,model_tapmain_usertest,,1,0,0,0
+access_tapmain_contractor,access_tapmain_contractor,model_tapmain_contractor,,1,0,0,0
 access_tapmain_jours,access_tapmain_jours,model_tapmain_jours,,1,0,0,0
 access_tapmain_creneaux,access_tapmain_creneaux,model_tapmain_creneaux,,1,0,0,0

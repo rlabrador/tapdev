@@ -3,11 +3,11 @@ from openerp import http
 
 class Tapmain(http.Controller):
     #appel index comme page de template
-     @http.route('/tapmain/', auth='public')
+     @http.route('/tapmain/', auth='public', website=True)
      def index(self, **kw):
-        Usertests = http.request.env['tapmain.usertest']
+        Contractors = http.request.env['tapmain.contractor']
         return http.request.render('tapmain.index', {
-            'usertests': Usertests.search([])
+            'contractors': Contractors.search([])
         })
 
 #     @http.route('/tapmain/tapmain/objects/', auth='public')

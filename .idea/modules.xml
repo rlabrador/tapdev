@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://E:/Users/rlabrador/Documents/GitHub/EduERPv8/.idea/EduERPv8.iml" filepath="E:/Users/rlabrador/Documents/GitHub/EduERPv8/.idea/EduERPv8.iml" />
       <module fileurl="file://E:/Users/rlabrador/Documents/GitHub/odoo8/odoo/.idea/odoo.iml" filepath="E:/Users/rlabrador/Documents/GitHub/odoo8/odoo/.idea/odoo.iml" />
+      <module fileurl="file://E:/Users/rlabrador/Documents/GitHub/openeducat_erp/.idea/openeducat_erp.iml" filepath="E:/Users/rlabrador/Documents/GitHub/openeducat_erp/.idea/openeducat_erp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tapdev.iml" filepath="$PROJECT_DIR$/.idea/tapdev.iml" />
     </modules>
   </component>

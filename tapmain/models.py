@@ -31,12 +31,12 @@ class creneaux(models.Model):
      _name = 'tapmain.creneaux'
      cren = fields.Selection([('A','15h à 16h30')],string='Creneaux', required=False)
 
-class usertest(models.Model):
+class student(models.Model):
      """
      Cette classe créée est une table de test
      """
-     _name = 'tapmain.usertest'
-     name = fields.Char(string='First Name', required=False)
+     _name = 'tapmain.student'
+     name = fields.Char(string='First Name', required=True)
      last_name = fields.Char(string='Last Name', required=False)
      urgent_email = fields.Char(string='Urgent email', required=False)
      emergency_phone1 = fields.Char(string='Emergency Phone1', required=False)
@@ -49,6 +49,23 @@ class usertest(models.Model):
      #create_date = fields.Date(string='CreateDate')
      #write_date =  fields.Date(string='MyWriteDate')
 
+class contractor(models.Model):
+     """
+     Cette classe créée est une table de test
+     """
+     _name = 'tapmain.contractor'
+     name = fields.Char(string='First Name', required=True)
+     last_name = fields.Char(string='Last Name', required=False)
+     urgent_email = fields.Char(string='Urgent email', required=False)
+     emergency_phone1 = fields.Char(string='Emergency Phone1', required=False)
+     emergency_phone2 = fields.Char(string='Emergency Phone2', required=False)
+     gender = fields.Selection([('g','Garçon'),('f','Fille')],string='Gender', required=False)
+     is_active = fields.Boolean(string='IsActive', _defaults=False)
+     birth_date = fields.Date(string='BirthDate', required=False)
+     #Des dates par défaut sont créés grâce au model (create_uid, create_date,write_uid, write_date)
+     #Ces champs sont des FK sur res_users
+     #create_date = fields.Date(string='CreateDate')
+     #write_date =  fields.Date(string='MyWriteDate')
 
 
 # class rythmeinter(models.Model):

@@ -10,7 +10,7 @@
         Cherchons traducteur en euskara...""",
 
     'author': "RL",
-    'website': "http://www.baionako_ikastola_polobeyris.com",
+    'website': "http://hiriondo.free.fr",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
@@ -20,7 +20,7 @@
 
     # any module necessary for this one to work correctly
     #'depends': ['base','contacts','google_drive','google_calendar','google_spreadsheet'],
-    'depends': ['base','contacts','google_drive'],
+    'depends': ['base','contacts','google_drive','website','school'],
 
     # always loaded
     'data': [
@@ -28,9 +28,15 @@
         'templates.xml',
         #This will link to a file in the folder data. This file, defaultdata.xml will contain the data that is automatically installed when the module is installed.
 	     'data/defaultdata.xml',
+        #raoute les entrees dans le menu principal
+         'views/contractor_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo.xml'
+        #'demo.xml', 'school/demo/school_demo.xml'
     ],
+    "installable": True,
+    "auto_install": False,
+    "application": True,
 }
